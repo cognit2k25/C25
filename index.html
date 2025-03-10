@@ -15,6 +15,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             height: 100vh;
         }
         h1 {
@@ -27,6 +28,20 @@
         .message {
             font-size: 1.5em;
         }
+        .register-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background: #ff6600;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .register-btn:hover {
+            background: #e65c00;
+        }
         .footer {
             margin-top: 20px;
             font-size: 1em;
@@ -37,6 +52,7 @@
     <h1>COGNIT '25</h1>
     <p class="message">Something big is coming soon! Stay tuned.</p>
     <div id="countdown"></div>
+    <a href="https://forms.gle/SSu9f4nraW7MfnSEA" class="register-btn" target="_blank">Register Now</a>
     <p class="footer">For updates, follow us on social media.</p>
     <script>
         function countdownTimer() {
